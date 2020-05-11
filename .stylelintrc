@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "color-hex-case": "lower",
+    "font-weight-notation": "numeric",
+    "function-comma-space-after": "always",
+    "function-comma-space-before": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "selector-list-comma-newline-after": "always",
+    "selector-list-comma-newline-before": "never-multi-line",
+    "selector-pseudo-element-colon-notation": "double",
+    "block-closing-brace-empty-line-before": "never",
+    "block-no-empty": true,
+    "block-opening-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "declaration-empty-line-before": "never",
+    "custom-property-empty-line-before": "never",
+    "rule-empty-line-before": [
+      "always", {
+        "except": [
+          "first-nested",
+          "after-single-line-comment"
+        ]
+      }
+    ],
+    "indentation": 2
+  },
+  "ignoreFiles": [
+    "node_modules/**",
+    "dist/**",
+    "**/sprite.scss",
+    "src/scss/head-styles/**"
+  ]
+}

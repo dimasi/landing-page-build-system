@@ -1,0 +1,26 @@
+@import '~sprite.scss';
+
+.sprite-png {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin: 0 10px;
+
+    &._mercury {
+      @include sprite($mercury);
+    }
+
+    &._venus {
+      @include sprite($venus);
+    }
+
+    &._earth {
+      @include sprite($earth);
+    }
+
+    &._mars {
+      @include sprite($mars);
+    }
+  }
+}

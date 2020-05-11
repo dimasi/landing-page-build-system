@@ -1,0 +1,30 @@
+include ~@/components/button/m-button
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="initial-scale=1, width=device-width")
+        meta(name="format-detection" content="telephone=no")
+        title Landing Page
+        // head assets
+    body
+        br
+        h1 Landing page webpack build system
+        br
+        br
+        h2 Components
+        br
+        br
+        div
+            +button('Button')
+        br
+        br
+        h2 SVG Sprite
+        br
+        include ~@/components/sprite-svg/c-sprite-svg
+        br
+        br
+        h2 PNG Sprite
+        br
+        include ~@/components/sprite-png/c-sprite-png

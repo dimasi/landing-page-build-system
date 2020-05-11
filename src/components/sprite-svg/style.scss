@@ -1,0 +1,12 @@
+.sprite-svg {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 150px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}

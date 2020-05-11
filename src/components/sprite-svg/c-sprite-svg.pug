@@ -1,0 +1,11 @@
+- fb = require('@/images/sprite-svg/fb.svg');
+- insta = require('@/images/sprite-svg/insta.svg');
+- youtube = require('@/images/sprite-svg/youtube.svg');
+
+.sprite-svg
+    .sprite-svg__item
+        svg(viewBox=fb.viewBox style="width: 150px"): use(xlink:href=fb.symbol)
+    .sprite-svg__item
+        svg(viewBox=insta.viewBox style = "width: 150px"): use(xlink:href=insta.symbol)
+    .sprite-svg__item
+        svg(viewBox=youtube.viewBox style="width: 150px"): use(xlink:href=youtube.symbol)
