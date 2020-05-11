@@ -144,25 +144,6 @@ const webpackCommonConfig = {
                     },
                 ],
             },
-
-            // modernizr
-            // {
-            //     test: /empty$/,
-            //     use: [
-            //         {
-            //             loader: 'webpack-modernizr-loader',
-            //             options: {
-            //                 'options': [
-            //                     'setClasses',
-            //                     'mq',
-            //                 ],
-            //                 'feature-detects': [
-            //                     'touchevents',
-            //                 ],
-            //             },
-            //         },
-            //     ],
-            // },
         ],
     },
 
@@ -319,15 +300,15 @@ const webpackProdConfig = {
                 },
             }),
 
-            // new TerserPlugin({
-            //     cache: true,
-            //     terserOptions: {
-            //         output: {
-            //             comments: false,
-            //         },
-            //     },
-            //     extractComments: false,
-            // }),
+            new TerserPlugin({
+                cache: true,
+                terserOptions: {
+                    output: {
+                        comments: false,
+                    },
+                },
+                extractComments: false,
+            }),
         ],
         removeEmptyChunks: false,
     },
